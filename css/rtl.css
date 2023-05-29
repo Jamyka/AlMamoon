@@ -1,0 +1,108 @@
+
+
+/* ==============================================
+	GET NEW FONT FAMILIES FOR RTL
+============================================== */
+
+	@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&subset=arabic');
+	@import url('https://fonts.googleapis.com/css?family=Changa:400,500&subset=arabic');
+
+	body{ font-style: normal; font-weight: 400; font-size: 18px; font-family: 'Changa', sans-serif; line-height: 24px; letter-spacing: 0px; color: #9D9D9D;}
+	.font-secondary{ font-family: 'Reem Kufi', sans-serif; }
+
+/* ==============================================
+	NAVIGATION OPTIONS
+============================================== */
+
+	.navigation .nav-links .dropdown-menu .nav-link{ text-align: right; }
+	.navigation .nav-links .has-sub .has-sub>a:after{ left: 15px; right: auto; }
+
+		@media only screen and (max-width: 992px){ 
+			.mobile-nb{ left: 25px; right: auto; }
+			.navigation .nav-links .nav-link{ text-align: right; }
+			.navigation .nav-links .has-sub>a:after{ right: auto; left: 15px; }
+			.navigation .nav-links>.extra-links{ text-align: right; }
+			.navigation .nav-links .dropdown-menu .dropdown-menu.to-left{ right: 0; }
+		}
+
+/* ==============================================
+	PAGE LOADER
+============================================== */
+
+	.pageloader .loader-line{ position: absolute; left: 0; }
+
+/* ==============================================
+	REVERSE WAVES
+============================================== */
+
+	.section-waves:before{ -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipX; -ms-filter: "FlipX"; }
+
+/* ==============================================
+	REVERSE POPOVER
+============================================== */
+
+	.popover{ text-align: right; }
+
+/* ==============================================
+	TEAM
+============================================== */
+
+	.team .team-wrapper .row{ flex-direction: row-reverse; }
+
+/* ==============================================
+	HISTORY NOTES
+============================================== */
+
+	.history-wrapper .note .note-button{ left: 7%; right: auto; }
+	.history-wrapper .note .note-dropdown{ left: -100px !important; right: auto; }
+		@media screen and (max-width: 568px){
+			.history-wrapper .note .note-dropdown{ left: -20px !important; }
+		}
+	.history-wrapper .note .note-dropdown li a{ text-align: right !important; }
+
+/* ==============================================
+	PROJECTS BOTTOM TEXT BUTTON
+============================================== */
+
+	/* Section bottom note */
+	.projects .bottom-note .bottom-note-button span:before{ left: auto; right: 0; }
+
+/* ==============================================
+	STEPS SVG POS.
+============================================== */
+
+	.steps .steps-wrapper .colored-svg{ left: auto; right: 0; }
+
+
+/* ==============================================
+	PRICING TABLES
+============================================== */
+
+	.prices .prices-wrapper .package .package-wrapper{ text-align: right; }
+
+/* ==============================================
+	CONTACT FORM AND INPUTS
+============================================== */
+
+	.contact .contact-wrapper .contact-form .input-wrapper label span{ left: auto; right: 35px; }
+	.contact .contact-wrapper .contact-form .input-wrapper.focused label span{ left: auto; right: 35px; }
+
+	input, textarea{ text-align: right !important; }
+	input::-webkit-input-placeholder{ text-align: right !important; }
+	input:-moz-placeholder{ text-align: right !important; }
+	input::-moz-placeholder{ text-align: right !important; }
+	input:-ms-input-placeholder{ text-align: right !important; }
+
+
+/* ==============================================
+	FOOTER
+============================================== */
+
+	footer .footer-list, footer .slider-buttons{ text-align: right; }
+
+
+/* ==============================================
+	FS SEARCH FORM
+============================================== */
+
+	.fs-searchform .recommended{ text-align: right; }
